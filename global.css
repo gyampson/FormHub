@@ -1,0 +1,36 @@
+:root {
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --accent-color: #00e5ff;
+  --secondary-color: #757575;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --border-radius: 12px;
+  --font-family-primary: "Parkinsans", sans-serif;
+  --font-family-secondary: "Parkinsans", serif;
+  --primary-color: #00e5ff;
+  --secondary-color: #00b3cc;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+  --background-color: #f7f7f7;
+  --surface-color: #ffffff;
+  --text-color: #222;
+  --accent-color: #00b3cc;
+  --secondary-color: #757575;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --primary-color: #00b3cc;
+  --secondary-color: #00e5ff;
+}
